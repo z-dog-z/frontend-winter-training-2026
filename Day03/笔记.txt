@@ -1,0 +1,68 @@
+JavaScript是一门编程语言，允许用户在浏览器页面上完成复杂的事情。
+组成：
+    1.ECMAScript 核心js 
+        变量 数组 对象 函数.....
+    2.DOM(Document Object Model)文档对象模型 操作网页元素api
+    3.BOM(Browser Object Model)浏览器对象模型 操作浏览器的api
+运行环境：
+    1.nodejs环境
+    2.浏览器环境
+注释：
+    单行注释 // ctrl + /
+    多行注释 /***/  输入/**按下enter
+特点：
+    1.解释性语言 js需要解析器解析执行  
+        nodejs 浏览器能解析 内置js解析器 
+    2.弱类型语言 
+        可以重复声明 可以更换数据类型 
+    3.从上到下按照代码解析顺序解析执行 
+    4.大小写敏感，可以作为客户端语言，也可以作为服务器端语言 
+标识符（变量）声明规则：
+    1.不能以数字开头 
+    2.由字母、数字、下划线、$组成 
+    3.不能使用js中的关键字和保留字 
+       不能使用 var break class let const
+    4.建议使用驼峰式命名 
+        firstName 小驼峰
+        LastName 大驼峰
+    练习：3a a3 _ $message break $ 
+        a3 _ $message $ 
+变量如何声明？
+    es5:
+        var 
+    es6
+        let 
+        const 
+js数据类型？
+    1.基本数据类型（简单数据类型）
+        string number boolean null undefiend symbol bigint
+    2.引用数据类型 （复杂数据类型）
+        只有Object
+--------------------------------------------------------------------
+Git个人使用：
+    上传代码到远程仓库 
+    1.新建远程仓库 
+    2.首次使用全局配置：
+        配置用户名 git config --global user.name "willsonkang1"
+        配置邮箱 git config --global user.email "2681091754@qq.com"
+    3.将本地代码文件夹 初始化成git仓库 git init
+    4.git add . 将更改/新增的代码提交到暂存区
+    5.git status 查看git提交状态
+    6.git commit -m '写自己的名字做了xxx事情' 将暂存区文件提交到本地仓库 
+    首次提交代码到远程仓库 将本地仓库和远程仓库进行绑定 
+        git remote add origin https://gitee.com/willsonkang1/my-repo.git
+    查看绑定远程仓库 git remote -v
+    7.将本地仓库代码推送到远程仓库 
+        git push origin master
+
+    后续使用：
+        git add .
+        git status
+        git commit -m ''
+        git push origin master
+
+如何获取别人的代码？
+    前提是开源
+    克隆项目远程地址 
+    git clone 远程仓库地址 
+    获取最新代码 git pull origin  master
